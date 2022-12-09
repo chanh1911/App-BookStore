@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:src="@drawable/anhbia5" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="150dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="110dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/anhbia" />
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="570dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/khung">
+
+    </View>
+
+    <TextView
+        android:id="@+id/textAvata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Tên"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="360dp"
+        android:background="@drawable/duongvien">
+        <TextView
+            android:id="@+id/soSachViet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:fontFamily="@font/baloo"
+            android:textSize="16dp"
+            android:textColor="#EF8D61"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewngaythamgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:text="Số sách đã viết"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:orientation="vertical"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="360dp"
+        android:background="@drawable/duongvien">
+        <TextView
+            android:id="@+id/luotTim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:fontFamily="@font/baloo"
+            android:textSize="16dp"
+            android:textColor="#EF8D61"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewsocuon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/baloo"
+            android:gravity="center|bottom"
+            android:text="Lượt thích"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="260dp"
+        android:background="@drawable/thanhchinhsua"
+        android:text="Chỉnh sửa hồ sơ"
+        android:textColor="#555"
+        android:drawableLeft="@drawable/pen_foreground"/>
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/thanhchinhsua"
+        android:text="Thông báo"
+        android:textColor="#555"
+        android:drawableLeft="@drawable/chuong_foreground"/>
+
+    <com.github.angads25.toggle.widget.LabeledSwitch
+        android:id="@+id/btn"
+        android:layout_width="55dp"
+        android:layout_height="21dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="212dp"
+        android:textSize="12sp"
+        app:colorBorder="#EF8D61"
+        app:on="true" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/thanhchinhsua"
+        android:text="Thay đổi mật khẩu"
+        android:textColor="#555"
+        android:drawableLeft="@drawable/khoa_foreground"/>
+
+    <Button
+        android:id="@+id/dangxuat"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Đăng Xuất"
+        android:textColor="#EF8D61" />
+
+
+
+
+</RelativeLayout>
